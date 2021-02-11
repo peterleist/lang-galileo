@@ -1,0 +1,32 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "Galileo",
+	"patterns": [
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#strings"
+		}
+	],
+	"repository": {
+		"keywords": {
+			"patterns": [{
+				"name": "keyword.control.galileo",
+				"match": "\\b(toplevel|or|and|lambda|dorm|wsp|por|por-inc|por-ex|csp|hsp|fdep|pdep|seq)\\b"
+			}]
+		},
+		"strings": {
+			"name": "string.quoted.double.galileo",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.galileo",
+					"match": "\\\\."
+				}
+			]
+		}
+	},
+	"scopeName": "source.galileo"
+}

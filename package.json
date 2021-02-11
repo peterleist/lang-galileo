@@ -1,0 +1,25 @@
+{
+    "name": "lang-galileo",
+    "displayName": "lang_galileo",
+    "description": "Syntax for Galileo",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.53.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "galileo",
+            "aliases": ["Galileo", "galileo"],
+            "extensions": [".dft"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "galileo",
+            "scopeName": "source.galileo",
+            "path": "./syntaxes/galileo.tmLanguage.json"
+        }]
+    }
+}
